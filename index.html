@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parser</title>
+   </head>
+<body>
+<p>Choose ur language</p>
+<form><input type="radio" name="question-one" onclick="radioButtonGetValue();" value="English" onChange="disablefield();" id="eng">English<br>
+    <input type="radio" name="question-one" onclick="radioButtonGetValue();" value="Українська" onChange="disablefield();" id="ua">Українська<br>
+
+</form>
+<p>Print ur number</p>
+<form>
+    <input type="text" name="search" id="number" disabled>
+    <input type="submit" value="Submit" onclick="convert(document.getElementById('number').value,radioButtonGetValue())">
+</form>
+<script src="script.js"></script>
+</body>
+</html>
